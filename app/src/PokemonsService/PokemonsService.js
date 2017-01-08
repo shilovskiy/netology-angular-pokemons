@@ -10,7 +10,7 @@ angular
                 method: 'GET',
                 isArray: true,
                 transformResponse: function(responseData) {
-                    return angular.fromJson(responseData).results;
+                    //return angular.fromJson(responseData).results;
                     return angular.fromJson(responseData).data;
                 }
             },
