@@ -11,8 +11,9 @@ module('PokemonApp')
             template: '<pokemon-list></pokemon-list>'
         }).
         when('/pokemons/:pokemonId', {
-            templateUrl: 'src/PokemonDetail/PokemonDetail.html',
-            controller: 'PokemonDetailCtrl'
+            template:'<pokemon-detail></pokemon-detail>'
+            //templateUrl: cls'src/PokemonDetail/PokemonDetail.html',
+            //controller: 'PokemonDetailCtrl'
         }).
         when('/edit/:pokemonId', {
             templateUrl: 'src/EditPokemon/EditPokemon.html',
@@ -26,6 +27,7 @@ module('PokemonApp')
             redirectTo: '/'
         });
 
+       // RestangularProvider.setBaseUrl('hhttp://pokeapi.co/api/v2/pokemon/');
         RestangularProvider.setBaseUrl('https://api.backendless.com/v1/data/');
 
     }
