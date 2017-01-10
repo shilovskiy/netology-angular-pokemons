@@ -12,7 +12,7 @@ module('PokemonApp')
         }).
         when('/pokemons/:pokemonId', {
             template:'<pokemon-detail></pokemon-detail>'
-            //templateUrl: cls'src/PokemonDetail/PokemonDetail.html',
+            //templateUrl: 'src/PokemonDetail/PokemonDetail.html',
             //controller: 'PokemonDetailCtrl'
         }).
         when('/edit/:pokemonId', {
